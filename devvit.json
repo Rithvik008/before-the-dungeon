@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "dungeon-shop",
+  "post": {
+    "dir": "public",
+    "entrypoints": {
+      "default": {
+        "entry": "index.html",
+        "height": "tall"
+      }
+    }
+  },
+  "server": {
+    "dir": "dist/server",
+    "entry": "index.js"
+  },
+  "permissions": {
+    "redis": true,
+    "reddit": true
+  },
+  "marketingAssets": {
+    "icon": "client/public/assets/icon.png"
+  },
+  "scripts": {
+    "dev": "npm run watch --prefix client",
+    "build": "npm run build --prefix client && npm run build --prefix server"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "one-more-room-workspace",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
